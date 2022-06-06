@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'QR-scanner';
+  scanResult:any='';
+  onCodeResult(result:string){
+    console.log(result)
+    this.scanResult=result
+  }
 }
